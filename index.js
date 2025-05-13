@@ -11,7 +11,9 @@ app.use(bodyParser.json());
 app.post('/rpc', async (req, res) => {
   try {
     const response = await axios.post(
-      'http://127.0.0.1:8332',
+    
+ 'https://9c42-190-26-185-5.ngrok-free.app',
+
       req.body,
       {
         auth: {
